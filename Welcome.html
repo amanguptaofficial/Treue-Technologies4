@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>VotingApplication</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div style="display: flex; background-color: #2e2f7e;">
+		<img src="eci-logo.png" style="width: 100px">
+		<div>
+			<h1 style="color: #ffffff">Voter Portal Election Commission Of
+				India</h1>
+		</div>
+	</div>
+	<div class="main-list">
+		<div class="inner-main-list">
+			<h1 style="color: white; background-color: black; padding: 0.9rem">What
+				do you need to do today?</h1>
+			<ul class="ul-list">
+				<li class="li-list">First Fill the full information</li>
+				<li class="li-list">Click on check eligible button</li>
+				<li class="li-list">First goto Check that you are valid for
+					this process.</li>
+				<li class="li-list">if you are valid then you will get Message
+					->"you are valid " else you will get Message ->"you are not Valid"
+				</li>
+				<li class="li-list">if you are Valid/Eligible then go to
+					Registration</li>
+				<li class="li-list">if you are not Valid/Eligible then best of
+					luck for next time</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="form-tag">
+		<form action="user-registration" method="post">
+			<table>
+				<tr>
+					<td class="text">FirstName:</td>
+					<td><input type="text" name="firstname" class="field"></td>
+				</tr>
+				<tr>
+					<td class="text">LastName:</td>
+					<td><input type="text" name="lastname" class="field"></td>
+				</tr>
+				<tr>
+					<td class="text">Mobile No:</td>
+					<td><input type="text" name="mobilenumber" class="field"></td>
+				</tr>
+				<tr>
+					<td class="text">Gender:</td>
+					<td><input type="radio" name="user-gender" value="male">Male
+						&nbsp; &nbsp; <input type="radio" name="user-gender"
+						value="female">Female</td>
+				</tr>
+				<tr>
+					<td class="text">DOB(MM):</td>
+					<td><input type="number" name="months" class="field"></td>
+				</tr>
+				<tr>
+					<td class="text">DOB(YYYY):</td>
+					<td><input type="number" name="year" class="field"></td>
+				</tr>
+				<tr>
+					<td class="text">Select Your City:</td>
+					<td><select name="city" class="field">
+							<option value="delhi">Delhi</option>
+							<option value="kanpur">Kanpur</option>
+							<option value="orai">Orai</option>
+							<option value="jhansi">jhansi</option>
+							<option value="jalaun">jalaun</option>
+							<option value="gwalior">gwalior</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" value="playing cricket" name="box"></td>
+					<td>Agree terms and condition</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" value="learning new technology" name="box"></td>
+					<td>Agree terms and condition</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" value="reading books" name="box"></td>
+					<td>Agree terms and condition</td>
+				</tr>
+
+				<tr>
+					<td>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						&nbsp;&nbsp; &nbsp;
+						<button type="submit">Check Eligibility</button>
+					</td>
+					<td>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+						<button type="reset">Reset</button>
+					</td>
+				</tr>
+
+			</table>
+		</form>
+	</div>
+</body>
+</html>
